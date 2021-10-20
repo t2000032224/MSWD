@@ -1,0 +1,55 @@
+import React from 'react'
+
+
+const  Course= () => {
+  return(
+    <div>
+     <p><h1>Half Stack application development</h1> </p>
+    </div>
+  )
+  }
+
+  const Part1 = (props)=>{
+    return(
+      <div>
+  <p>Fundamentals of React {props.num}</p>
+      </div>
+    )
+  }
+  const Part2 = ( props)=>{
+    return(
+      <div>
+         <p>Using props to pass data {props.no}</p>
+      </div>
+    )
+  }
+ const Part3 =(props)=> {
+   return(
+     <div>
+ <p>State of a component{props.number}</p>
+     </div>
+   )
+ }
+
+  
+ 
+const App= () => {
+  const num =  10
+  const no = 7
+  const number= 14
+ 
+  return (
+    <div>
+
+      <Course/>
+        < Part1  num={num}/>
+       <Part2  no={no}/>
+      < Part3 number={number}/>
+      
+      <p>number of exercises { num + no + number}</p>
+      
+    </div>
+  )
+}
+  
+export default App
