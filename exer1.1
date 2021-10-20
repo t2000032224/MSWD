@@ -1,0 +1,28 @@
+import React from 'react'
+
+
+const header  = () => {
+  return(
+    <div>
+     <p>Half Stack application development </p>
+    </div>
+  )
+  }
+
+  const content = (props)=>{
+    return(
+      <div>
+  <p>Fundamentals of React {props.num}</p>
+  <p>Using props to pass data {props.no}</p>
+  <p>State of a component{props.number}</p>
+      </div>
+    )
+  }
+  const footer =(props)=>{
+    return(
+      <div>
+         <p>number of exercises {props.name}</p>
+      </div>
+    )
+  }
+  
